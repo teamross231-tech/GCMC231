@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Login | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-login="true">
+
+    <main class="login-page">
+
+        <section class="login-brand">
+            <div class="cross">✝</div>
+
+            <h1>Welcome To Great Commission Ministries</h1>
+
+            <p>
+                The church where everybody is somebody.
+                Feel free to worship with us, We are a bible believing church.
+            </p>
+        </section>
+
+        <section class="login-card">
+            <form id="loginForm" class="login-form">
+
+                <h2>Administrator Login</h2>
+
+                <p>
+                    Sign in to manage Great Commission Ministries.
+                </p>
+
+                <div id="loginError" class="login-error">
+                    Invalid username or password.
+                </div>
+
+                <div class="field">
+                    <label for="username">Username or Email</label>
+
+                    <input
+                        type="text"
+                        id="username"
+                        required
+                    >
+                </div>
+
+                <div class="field" style="margin-top: 14px;">
+                    <label for="password">Password</label>
+
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Enter password"
+                        required
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="btn btn-primary"
+                    style="width: 100%; margin-top: 20px;"
+                >
+                    Sign In
+                </button>
+
+
+            </form>
+        </section>
+
+    </main>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

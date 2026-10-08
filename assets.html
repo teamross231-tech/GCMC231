@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Equipment | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="assets">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Church Equipment</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>Church Equipment & Property</h2>
+            <p>Track equipment, vehicles, property and furniture.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <form id="assetsForm" class="form-grid">
+
+            <div class="field">
+                <label>Equipment Name</label>
+                <input name="name" required>
+            </div>
+
+            <div class="field">
+                <label>Category</label>
+                <select name="category">
+                    <option>Equipment</option>
+                    <option>Musical Department</option>
+                    <option>Media Department</option>
+                    <option>Furniture</option>
+                    <option>Technical Department</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Value (LRD)</label>
+                <input name="value" type="number" min="0">
+            </div>
+
+            <div class="field">
+                <label>Status</label>
+                <select name="status">
+                    <option>Good</option>
+                    <option>Needs Repair</option>
+                    <option>Disposed</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <button class="btn btn-primary">
+                    Add Asset
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="card" style="margin-top: 18px;">
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Asset</th>
+                        <th>Category</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="assetsTable"></tbody>
+            </table>
+        </div>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

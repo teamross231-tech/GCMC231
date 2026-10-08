@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership Committee | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="leadership">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Leadership Committee</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>Leadership Committee</h2>
+            <p>GCMC pastors, elders, administrators and committee leaders.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="section-title">Add Leadership Member</h3>
+
+        <form id="leaderForm" class="form-grid">
+
+            <div class="field">
+                <label>Name</label>
+                <input name="name" required>
+            </div>
+
+            <div class="field">
+                <label>Role</label>
+                <input name="role" required>
+            </div>
+
+            <div class="field">
+                <label>Phone</label>
+                <input name="phone">
+            </div>
+
+            <div class="field">
+                <label>Email</label>
+                <input name="email" type="email">
+            </div>
+
+            <div class="field">
+                <label>Term</label>
+                <input name="term" placeholder="2025 - 2028">
+            </div>
+
+            <div class="field">
+                <button class="btn btn-primary">
+                    Add Leader
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="card" style="margin-top: 18px;">
+        <h3 class="section-title">Leadership Committee</h3>
+
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th>Phone</th>
+                        <th>Email</th>
+                        <th>Term</th>
+                    </tr>
+                </thead>
+
+                <tbody id="leadersTable"></tbody>
+            </table>
+        </div>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

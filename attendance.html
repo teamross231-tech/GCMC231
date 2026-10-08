@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="attendance">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Attendance</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>Church Attendance</h2>
+            <p>Track attendance for worship services and meetings.</p>
+        </div>
+    </div>
+
+    <div class="card">
+        <form id="attendanceForm" class="form-grid">
+
+            <div class="field">
+                <label>Date</label>
+                <input type="date" name="date" required>
+            </div>
+
+            <div class="field">
+                <label>Service</label>
+                <input name="service" required>
+            </div>
+
+            <div class="field">
+                <label>Present</label>
+                <input type="number" name="present" min="0" required>
+            </div>
+
+            <div class="field">
+                <label>Absent</label>
+                <input type="number" name="absent" min="0" required>
+            </div>
+
+            <div class="field">
+                <button class="btn btn-primary">
+                    Save Attendance
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="card" style="margin-top: 18px;">
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Service</th>
+                        <th>Present</th>
+                        <th>Absent</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+
+                <tbody id="attendanceTable"></tbody>
+            </table>
+        </div>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

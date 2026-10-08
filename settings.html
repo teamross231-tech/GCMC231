@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="settings">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Settings</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>System Settings</h2>
+            <p>Configure basic church information.</p>
+        </div>
+    </div>
+
+    <div class="card">
+
+        <form id="settingsForm" class="form-grid">
+
+            <div class="field full">
+                <label>Church Name</label>
+                <input name="church">
+            </div>
+
+            <div class="field">
+                <label>Currency</label>
+                <select name="currency">
+                    <option>LRD</option>
+                    <option>USD</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Main Service Location</label>
+                <input name="service">
+            </div>
+
+            <div class="field">
+                <button class="btn btn-primary">
+                    Save Settings
+                </button>
+            </div>
+
+        </form>
+
+    </div>
+
+    <div class="card" style="margin-top: 18px;">
+        <h3 class="section-title">Demo Data</h3>
+
+        <p>
+            Reset the sample records stored in this browser.
+        </p>
+
+        <button
+            id="resetData"
+            class="btn btn-danger"
+            style="margin-top: 12px;"
+        >
+            Reset Demo Data
+        </button>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

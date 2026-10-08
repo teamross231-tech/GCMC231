@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrators | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="users">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Administrators</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>Administrator Accounts</h2>
+            <p>Manage people who can access the church management system.</p>
+        </div>
+    </div>
+
+    <div class="alert">
+        This prototype uses browser-based authentication. A production
+        version should use server-side authentication, password hashing,
+        sessions and role-based permissions.
+    </div>
+
+    <div class="card">
+        <div class="table-wrap">
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Status</th>
+                        <th>Access</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>System Administrator</td>
+                        <td>admin@greatcommission.org</td>
+                        <td>
+                            <span class="badge badge-green">
+                                Active
+                            </span>
+                        </td>
+                        <td>Full Access</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

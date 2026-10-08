@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports & Analytics | Great Commission Ministries</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-page="reports">
+
+    <div class="app">
+
+        <aside class="sidebar"></aside>
+
+        <main class="main">
+
+            <header class="topbar">
+                <button class="menu-button" aria-label="Open menu">
+                    ☰
+                </button>
+
+                <strong>Reports & Analytics</strong>
+
+                <div class="admin">
+                    Administrator
+
+                    <div class="avatar">
+                        AD
+                    </div>
+                </div>
+            </header>
+
+            <section class="content">
+                
+    <div class="page-header">
+        <div>
+            <h2>Reports & Analytics</h2>
+            <p>View management information for church leadership.</p>
+        </div>
+
+        <button
+            class="btn btn-secondary"
+            onclick="window.print()"
+        >
+            Print Report
+        </button>
+    </div>
+
+    <div class="cards">
+
+        <div class="card stat-card">
+            <div class="stat-label">Income</div>
+            <div class="stat-value" id="reportIncome">LRD 0</div>
+        </div>
+
+        <div class="card stat-card">
+            <div class="stat-label">Expenses</div>
+            <div class="stat-value" id="reportExpense">LRD 0</div>
+        </div>
+
+        <div class="card stat-card">
+            <div class="stat-label">Members</div>
+            <div class="stat-value" id="reportMembers">0</div>
+        </div>
+
+        <div class="card stat-card">
+            <div class="stat-label">Attendance</div>
+            <div class="stat-value" id="reportAttendance">0</div>
+        </div>
+
+    </div>
+
+    <div class="card" style="margin-top: 18px;">
+        <h3 class="section-title">Expense Categories</h3>
+
+        <div id="expenseChart" class="chart"></div>
+    </div>
+    
+            </section>
+
+        </main>
+
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
